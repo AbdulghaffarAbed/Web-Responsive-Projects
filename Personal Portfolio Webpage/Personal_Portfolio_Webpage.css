@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#navbar{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: rgb(67, 104, 107);
+    position:sticky;
+    top:0px;
+    
+}
+
+#nav-link{
+    width: 8%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    padding-top: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#nav-link:hover{
+    background-color: rgb(197, 197, 197);
+    color: black;
+    text-shadow:1px 1px rgb(64, 90, 238);
+}
+
+#welcome-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    background-color: rgb(140, 255, 188);
+    
+}
+
+#welcome-header{
+    font-family: "Garamond", Arial, Helvetica, sans-serif;
+    font-size: 55px; 
+    
+}
+
+#welcome-header:hover{
+    text-shadow: 1px 1px rgb(231, 214, 63);
+}
+
+#projects{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    background-image: url(background.jfif);
+}
+
+#gallery-title{
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+#grid-container {
+    width: inherit;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+    
+}
+
+.project-title{
+    width: 330px;
+    height: 360px;
+    text-align: center;
+    font-size:28px ;
+    border-style: none;
+    border-width: 1px;
+    box-shadow: 2px 2px rgb(123, 29, 177);
+    background-color: rgba(9, 149, 243, 0.445);
+    border-radius: 5%;
+}
+
+#project-image{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+#project-title{
+    margin-top: 0;
+    height:60px;
+    font-size:24px ;
+    text-align: center;
+    color: rgb(34, 33, 33);
+    padding: 7px;
+    text-decoration: none;
+}
+
+#gallery-title{
+    margin-top: 40px;
+}
+
+#accounts-container{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(37, 37, 37);
+}
+.account_logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius:8%;
+    margin: 4px;
+}
+
+#accounts-header{
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: white;
+   
+}
+
+.account_logo:hover{
+    box-shadow: 0.5px 0.5px white;
+}
+
+@media screen and (max-width: 700px) {
+    #accounts-container{
+        background-color: red;
+    }
+    section .grid-container {
+        width: inherit;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        margin-bottom: 150px;
+        background-color: violet;
+        
+    }
+}

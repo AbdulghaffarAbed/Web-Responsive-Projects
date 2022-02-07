@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="Technical_Documentation_Page.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <meta name="description" content="Java Variabels, data types, arrays, for loop, while loop ">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header id="nav-header">
+            Java Documentation
+        </header>
+
+        <a href="#data_type" class="nav-link" id="link">Data type</a>
+        <a href="#variables" class="nav-link" id="link">variables</a>
+        <a href="#if_else_statment" class="nav-link" id="link">If else statment</a>
+        <a href="#while_loop" class="nav-link" id="link">While loop</a>
+        <a href="#for_loop" class="nav-link" id="link">For loop</a>
+        <a href="#array" class="nav-link" id="link">Arrays</a>
+
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="data_type">
+            <header id="section-header">Data Types</header>
+            <p>
+                a variable in Java must be a specified data type:
+                <code id="code">
+                    int myNum = 5;               // Integer (whole number)
+                    <br>
+                    float myFloatNum = 5.99f;    // Floating point number
+                    <br>
+                    char myLetter = 'D';         // Character
+                    <br>
+                    boolean myBool = true;       // Boolean
+                    <br>
+                    String myText = "Hello";     // String
+                </code>
+            </p>
+            <p>Data types are divided into two groups:
+            <ul>
+                <li>Primitive data types - includes byte, short, int, long, float, double, boolean and char</li>
+                <li>Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a
+                    later chapter)</li>
+
+            </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header id="section-header">Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>
+                In Java, there are different types of variables, for example:
+                <ul>
+                    <li>String - stores text, such as "Hello". String values are surrounded by double quotes</li>
+                    <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                    <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                    <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                    <li>boolean - stores values with two states: true or false</li>
+                    
+                </ul>
+            </p>
+            <p>To create a variable, you must specify the type and assign it a value:</p>
+            <code>type variableName = value;</code>
+        </section>
+
+        <section class="main-section" id="if_else_statment">
+            <header id="section-header">If Else Statment</header>
+            <p>Java supports the usual logical conditions from mathematics.</p>
+            <p>Java has the following conditional statements:
+                <ul>
+                    <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+                    <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+                    <li>Use else if to specify a new condition to test, if the first condition is false</li>
+                    <li>Use switch to specify many alternative blocks of code to be executed  </li>
+                </ul>
+            </p>
+            <p>Examples:
+                <code id="code">if (20 > 18) {
+                    <br>
+                    System.out.println("20 is greater than 18");
+                    <br>
+                  }</code>
+                <code id="code">int time = 20;
+                    <br>
+                    if (time < 18) {
+                        <br>
+                      System.out.println("Good day.");
+                      <br>
+                    } else {
+                        <br>
+                      System.out.println("Good evening.");
+                      <br>
+                    }
+                    <br>
+                    // Outputs "Good evening."</code>
+            </p>
+            
+        </section>
+        <section class="main-section" id="while_loop">
+            <header id="section-header">While Loop</header>
+            <p>The while loop loops through a block of code as long as a specified condition is true:
+                <code id="code">while (condition) {
+                    <br>
+                    // code block to be executed
+                    <br>
+                  }</code>
+            </p>
+            <p>Example:
+                <code id="code">int i = 0;
+                    <br>
+                    while (i < 5) {
+                        <br>
+                      System.out.println(i);
+                      <br>
+                      i++;
+                      <br>
+                    }</code>
+            </p>
+            
+        </section>
+        <section class="main-section" id="for_loop">
+            <header id="section-header">For Loop</header>
+            <p>hen you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+                <code id="code">
+                    for (statement 1; statement 2; statement 3) {
+                        <br>
+                        // code block to be executed
+                        <br>
+                      }
+                </code>
+                <ul>
+                    <li>Statement 1 is executed (one time) before the execution of the code block.</li>
+                    <li>Statement 2 defines the condition for executing the code block.</li>
+                    <li>Statement 3 is executed (every time) after the code block has been executed.</li>
+                </ul>
+            </p>
+            
+            <p>
+                Example:
+                <code id="code">
+                    for (int i = 0; i < 5; i++) {
+                        <br>
+                        System.out.println(i);
+                        <br>
+                      }
+                </code>
+            </p>
+            
+        </section>
+        <section class="main-section" id="array" style="margin-bottom: 15px;">
+            <header id="section-header">Arrays</header>
+            <p>
+                Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+                To declare an array, define the variable type with square brackets:
+                <code id="code">
+                    String[] cars;
+                </code>
+            </p>
+            <p>
+                Example:
+                <code id="code">
+                    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+                    <br>
+                    int[] myNum = {10, 20, 30, 40};
+                </code>
+            </p>
+           
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+flex-flow:column wrap;
+justify-content: center;
+align-items: center;
+background-image: url(background.jfif);
+background-size: cover;
+}
+
+#title{
+    margin-top: 35px;
+    font-family: "Lucida Bright";
+}
+#description{
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+#survey-form{
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: left;
+    padding: 20px;
+    background-color:rgb(125, 248, 166);
+    border-radius: 27px;
+    opacity: 0.8;
+    
+}
+
+#email, #name, #age, #dropdown{
+    border-radius: 5px;
+    height: 45px;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    border:none;
+}
+#name-label{
+    margin-top: 24px;
+}
+
+#radioButtons{
+    margin-bottom: 10px;
+}
+label, #radioButtons,#more_info {
+    font-size: 20px;
+}
+
+#radiuo_divs{
+    margin-top: 15px;
+}
+
+#more_info{
+    margin-top: 35px;
+    margin-bottom: 14px;
+}
+
+#txt_area{
+    border:none;
+    padding:10px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+#submit{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(5, 91, 202);
+    font-style: bold;
+    margin: auto;
+}
